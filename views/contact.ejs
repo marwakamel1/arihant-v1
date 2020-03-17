@@ -1,0 +1,65 @@
+<%- include("./partials/header.ejs") %> 
+
+  
+          <div class="p-2 container" style="height:unset ; width:unset;">
+        
+        <div class="row ee" style="margin-top: 70px;">
+          <div class="col-sm-12 col-md-6 ee">
+              <h1 class="title-h p-relative color-fff" style="padding-bottom: 10px;">
+                <span class="fw-200">Contact </span> Us 
+                <span class="line p-absolute bg-orange"></span>
+                </h1>
+                   <ul style="color:#fff; padding-left: 10px;list-style: none;">
+                   <li><i class="fa fa-road"></i>K city building near goldcity mall,manama floor 5 office 506</li>
+          <li><i class="fa fa-phone"></i> 00973 17210705  <i class="fa fa-phone" style="padding-left:10px;"></i> 00973 17229411</li>
+          <li><i class="fa fa-envelope"></i> test@acme.test</li>
+        </ul>
+            <div class="contact-form">
+              <form class="form" id="contact-form" method="POST" action="send" novalidate="true">
+                <div class="messages"></div>
+                <div class="controls">
+                  <div class="row"> 
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input id="form_name" class="form-control" type="text" name="name" placeholder="Name" required="required" data-error="Name is required.">
+                      <div class="help-block with-errors color-orange"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input id="form_email" class="form-control" type="email" name="email" placeholder="Email" required="required" data-error="email is required.">
+                    <div class="help-block with-errors color-orange"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <input id="form_subject" class="form-control" type="text" name="subject" placeholder="Subject">
+                      <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <textarea id="form_message" class="form-control" name="message" placeholder="Message" rows="6" required="required" data-error="Message."></textarea>
+                      <div class="help-block with-errors color-orange"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <input type="submit" value="Send Message" class="main-btn color-fff radius-50px bg-orange color-orange-hvr disabled">
+                  </div>
+                  <div class="col-md-12" style="color:#fff"><%=msg%></div>
+                  </div>
+                </div>
+              </form>    
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 d-flex flex-column justify-content-center " style="margin-top: 10px">
+             
+               <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14315.910310377678!2d50.5728897!3d26.229918093526198!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x14e6bb044aeacda6!2sArihant%20Jewellers!5e0!3m2!1sen!2sbh!4v1582899718402!5m2!1sen!2sbh"  frameborder="0" style="margin-top: auto;width: 100%;border:0;border-radius: 10px;height: 100%;padding-top: 5px;" allowfullscreen=""></iframe>
+             
+
+          </div>
+        </div>
+          </div>   
+     
+
+ <%- include("./partials/footer.ejs") %>

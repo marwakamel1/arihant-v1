@@ -1,0 +1,36 @@
+ 	
+  <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js "></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/js/swiper.min.js"></script>
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lity/2.4.0/lity.min.js"></script>
+  <script>if (window.module) module = window.module;</script>
+
+  <script type="text/javascript">
+  	$(document).ready(function(){
+  		    $(document).on("click","#test-element",function() {
+        alert("click bound to document listening for #test-element");
+    });
+
+      	$(document).on("click",".navigation-menu",function(){
+  		$(".navigation-menu").toggleClass("navigation-menu-open");
+  	});
+  	$('html').on('click',function(e){
+  		if(!$(e.target).closest(".js-nav-menu").length && 
+        $('.js-nav-menu').hasClass('navigation-menu-open'))
+        {
+
+  			$('.js-nav-menu').removeClass('navigation-menu-open');
+        }
+  	})
+
+
+
+  	})
+
+  </script>
+
+</body>
+</html>
