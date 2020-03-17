@@ -1,0 +1,360 @@
+*{
+	width: 100%;
+    height: 100%;
+}
+html,body{
+	object-fit: cover;
+}
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #262626;
+}
+hr{
+	border-width: 3px;
+    border-color: #fff;
+    text-align: center;
+}
+.handel {
+    position: absolute;
+    height: 200%;
+    display: block;
+    background-color: #ffdc73;
+    width: 200%;
+    top: 80%;
+    left: 30%;
+    z-index: 3;
+    opacity: 0.2;
+    transform: rotate(45deg);
+}
+.ee *{
+	height: unset;
+
+}
+.ee i{
+	width:unset;
+}
+.fa {
+    padding-right: 10px;
+    font-weight: 900;
+}
+.team-area{
+	padding-top: 3%; 
+}
+#dd,#dd a,ul.list-inline,ul.list-inline li,div.social p{
+	width: unset;
+	height: unset;
+}
+.single-team{
+	background-color: #000;
+	margin-bottom: 10px;
+}
+
+.single-team:hover .social{
+   cursor: pointer;
+   opacity: 1;
+   transform: rotateY(0deg) scale(1,1);
+}
+
+.img-area{
+	overflow: hidden;
+	position: relative;
+
+}
+.img-area img{
+	width:100%;
+
+}
+
+.img-area : hover img{
+	transform: scale(1.2)
+}
+.img-area img{
+	transition: all 0.4s ease 0s;
+}
+
+.img-area .social{
+	background-color: rgba(0,0,0,0.7);
+	position: absolute;
+	text-align: center;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	transition: .5s;
+	transform: rotateY(180deg) scale(0.5,0.5);
+}
+
+.social ul{
+	text-align: center;
+	position: relative;
+	top: 175px;
+}
+
+.social li a{
+	border: 1px solid #fff;
+	color: #fff;
+    display: block;
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.social li a:hover{
+	background-color: #fff;
+	color: #000;
+	border:1px solid transparent;
+}
+
+.img-text{
+	padding: 25px;
+	color: #fff;
+	text-align: center;
+}
+.img-text h4{
+	margin: 0 0 5px;
+	font-size: 30px;
+	/*font-family: ;*/
+	letter-spacing:5px;
+}
+
+.img-text h5{
+	/*margin: 0 0 5px;*/
+	font-size: 17px;
+	/*font-family:; */
+	/*letter-spacing:5px;*/
+	font-weight: bold;
+	text-transform: capitalize;
+
+}
+.social p{
+	color: #fff;
+	text-align: center;
+	position: relative;
+	top: 200px;
+}
+
+.bg-video{
+	position: relative;
+}
+
+#herovideo{
+	height: 100vh;
+	width: 100%;
+	background-position: absolute;
+	z-index: 10;
+	object-fit: cover;
+}
+
+.vidContent{
+	position: absolute;
+	/*top:1%;*/
+	color:#f1f1f1;
+	width: 100%;
+	/*padding: 10px;*/
+	text-align: center;
+	z-index: 20;
+}
+
+.navigation-menu-bars,
+.navigation-menu-bars::before,
+.navigation-menu-bars::after{
+	cursor: pointer;
+	border-radius: 1px;
+	height: 2px;
+	width: 25px;
+	background-color: white;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	display: block;
+	transition: all 0.3s;
+}
+
+.navigation-menu{
+	background-color: transparent;
+	height: 100%;
+	position: fixed;
+	width: 599px;
+	transform: translateX(-100%);
+	transition: transform 0.3s 0.3s;
+	z-index: 21;
+	opacity: 0.5;
+}
+
+.navigation-menu::before{
+	background-color: #d6b149 ;
+	content: '';
+	height: 400%;
+	left: 50%;
+	position: absolute;
+	top: 0;
+	transform: translate(-50%,-50%) rotate(45deg);
+	width: 100%;
+    z-index: 0;
+}
+.navigation-menu-open{
+	transform: translateX(0);
+	opacity: 1;
+}
+.navigation-menu-open .navigation-menu-bars{
+	background-color: transparent;
+
+}
+
+.navigation-menu-open .navigation-menu-bars::before,
+.navigation-menu-open .navigation-menu-bars::after{
+	top: 0;
+}
+
+.navigation-menu-open .navigation-menu-bars::before{
+	transform: rotate(45deg);
+}
+
+.navigation-menu-open .navigation-menu-bars::after{
+	transform: rotate(-45deg);
+}
+
+.navigation-menu-open .menu-list-item{
+	opacity: 1;	
+}
+
+.navigation-menu-open .menu-list-item:nth-child(1){
+	transition-delay: 1s;	
+}
+.navigation-menu-open .menu-list-item:nth-child(2){
+	transition-delay: 1.25s;	
+}
+.navigation-menu-open .menu-list-item:nth-child(3){
+	transition-delay: 1.5s;	
+}
+.navigation-menu-open .menu-list-item:nth-child(4){
+	transition-delay: 1.75s;	
+}
+
+.navigation-menu-toggle{
+	cursor:pointer;
+	height: 30px;
+	position: absolute;
+	right: -40px;
+	top:5px;
+	width: 30px;
+}
+
+.navigation-menu-bars::before,
+.navigation-menu-bars::after{
+	content: '';
+}
+
+.navigation-menu-bars::before{
+	left: 0px;
+	top:-8px;
+}
+
+.navigation-menu-bars::after{
+	left: 0px;
+	top:8px;
+}
+
+.menu-list{
+	padding: 59px 28px;
+	position: relative;
+	z-index: 10;
+	   list-style: none;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+.menu-list a{
+    color: #fff;
+   
+}
+.menu-list-item{
+	margin: 40px 0;
+	opacity: 0;
+	transition: opacity 0.5s 0.5s;
+}
+
+
+	/*	.square {
+		  width: 100px;
+		  height: 100px;
+		  margin: 25px;
+		  -ms-transform: rotate(-45deg);
+		  -webkit-transform: rotate(-45deg);
+		  transform: rotate(-45deg);
+		  overflow: hidden;
+		}
+		.pic {
+		  background: url(http://placekitten.com/g/150/150);
+		  width: 150px;
+		  height: 150px;
+		  margin: -25px;
+		  -ms-transform: rotate(45deg);
+		  -webkit-transform: rotate(45deg);
+		  transform: rotate(45deg);
+		}*/
+	
+		ul.pics{
+			position: absolute;
+			/*top: 10%;
+			left: 20%;*/
+			margin: 0;
+			padding: 0;
+			color: #000;
+            /*height: 600px;*/
+		}
+		ul.pics li{
+			list-style: none;
+			position: absolute;
+			width:250px;
+			height:250px;
+			/*background-color: #000;*/
+			transform: rotate(45deg);
+			overflow: hidden;
+			border: 5px solid;
+			border-radius: 20px;
+		}
+
+		ul li.item1{
+            top:0%;
+            left: 10%;
+            background-color: green;
+            border-color: #a8a391 ;
+		}
+        ul li.item2{
+            top: 30%;
+            left: 40%;
+            background-color: red;
+            border-color: #f2d361 ;
+		}
+		ul li.item3{
+            top:60%;
+            left: 10%;
+            background-color: blue;
+            border-color: #a8a391 ;
+		}
+        ul li .bg{
+        	transform: rotate(-45deg) scale(1.42);
+        }
+		ul li.item1 .bg{
+			background-image: url("../priscilla.jpg");
+			background-size: cover;
+		}
+		ul li.item2 .bg{
+			background-image: url("../k.jpg");
+			background-size: cover;
+		}
+		ul li.item3 .bg{
+			background-image: url("../Gold-Souk-Diera.jpg");
+			background-size: cover;
+		}
+		#g{
+				border-bottom: 100px solid black;
+            	border-right: 100px solid transparent;
+                width:0px;
+               height:0px;
+		}
