@@ -55,7 +55,7 @@ app.post('/send',(req,res) => {
         secure: true, // this is true as port is 465
         auth: {
             user: 'marwakamel061@gmail.com', //Gmail username
-            pass: '1477412m' // Gmail password
+            pass: 'password' // Gmail password
         },
     tls:{
       rejectUnauthorized:false
